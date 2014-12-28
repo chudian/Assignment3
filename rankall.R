@@ -6,7 +6,7 @@ rankall <- function(outcome, num = "best") {
   validOutcome = c("heart attack","heart failure","pneumonia")
   if (!outcome %in% validOutcome) { stop("invalid outcome")}
   
-  validState = unique(data[,7])
+  state = unique(data[,7])
   ##if (!state %in% validState) stop("invalid state")
   
   ## convert outcome name into column name
